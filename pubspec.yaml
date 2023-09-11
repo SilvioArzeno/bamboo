@@ -1,7 +1,7 @@
 name: bamboo_rd
 description: Bamboo is a streamlined personal finance app, designed exclusively for individuals. It offers intuitive expense tracking, customizable budgeting, and bill management, empowering users to take control of their financial well-being with ease and confidence. Download Bamboo to simplify your money management today.
 publish_to: 'none'
-version: 0.0.1
+version: 0.0.1+1
 
 environment:
   sdk: '>=3.1.0 <4.0.0'
