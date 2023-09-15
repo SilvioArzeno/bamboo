@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "537572138434",
+    "project_id": "bamboo-finances",
+    "storage_bucket": "bamboo-finances.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537572138434:android:1646d27c54e3b510054a5b",
+        "android_client_info": {
+          "package_name": "com.example.bamboo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBPvv5lGNuPe4_rlN32X9KtrUDCsd6Ov0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
