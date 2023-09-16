@@ -63,6 +63,6 @@ class DefaultFirebaseOptions {
     messagingSenderId: '537572138434',
     projectId: 'bamboo-finances',
     storageBucket: 'bamboo-finances.appspot.com',
-    iosBundleId: 'com.example.bamboo',
+    iosBundleId: 'com.arzeno.bamboo',
   );
 }
