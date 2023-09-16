@@ -51,7 +51,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyBBPvv5lGNuPe4_rlN32X9KtrUDCsd6Ov0',
-    appId: '1:537572138434:android:1646d27c54e3b510054a5b',
+    appId: '1:537572138434:android:91503dd1f9f481d5054a5b',
     messagingSenderId: '537572138434',
     projectId: 'bamboo-finances',
     storageBucket: 'bamboo-finances.appspot.com',
@@ -59,7 +59,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyCmy7MyY4Xth2hBMNOJdMoPspkvtUKzFMY',
-    appId: '1:537572138434:ios:02b868882bf99bf9054a5b',
+    appId: '1:537572138434:ios:11b97cbdf2a48502054a5b',
     messagingSenderId: '537572138434',
     projectId: 'bamboo-finances',
     storageBucket: 'bamboo-finances.appspot.com',
