@@ -6,6 +6,7 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: const EdgeInsets.all(16.0),
       height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,
       color: Theme.of(context).primaryColor,
