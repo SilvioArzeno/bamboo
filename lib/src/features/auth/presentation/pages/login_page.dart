@@ -7,7 +7,7 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(16.0),
+      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 64.0),
       height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,
       color: Theme.of(context).primaryColor,
@@ -15,23 +15,61 @@ class LoginPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
+          const Spacer(
+            flex: 2,
+          ),
           SizedBox(
               height: MediaQuery.of(context).size.height * 0.15,
               child: AppImages.transparentLogoImage),
+          const Spacer(),
           Text("Welcome",
               textAlign: TextAlign.center,
               style: Theme.of(context).primaryTextTheme.headlineMedium),
-          SizedBox(
-            height: MediaQuery.of(context).size.height * 0.05,
-            width: MediaQuery.of(context).size.width * 0.75,
-            child: ElevatedButton(
-              onPressed: () => {},
-              child: Text(
-                'LOGIN',
-                style: Theme.of(context).primaryTextTheme.labelMedium,
+          const Spacer(
+            flex: 5,
+          ),
+          ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 300),
+            child: SizedBox(
+              height: MediaQuery.of(context).size.height * 0.055,
+              width: MediaQuery.of(context).size.width * 0.75,
+              child: ElevatedButton(
+                onPressed: () => {},
+                child: Text(
+                  'LOGIN',
+                  style: Theme.of(context).primaryTextTheme.labelMedium,
+                ),
               ),
             ),
-          )
+          ),
+          const Spacer(
+            flex: 2,
+          ),
+          ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 300),
+            child: SizedBox(
+              height: MediaQuery.of(context).size.height * 0.055,
+              width: MediaQuery.of(context).size.width * 0.75,
+              child: OutlinedButton(
+                style: const ButtonStyle(
+                  side: MaterialStatePropertyAll(
+                    BorderSide(color: Colors.white, width: 2.5),
+                  ),
+                ),
+                onPressed: () => {},
+                child: Text(
+                  'SIGN UP',
+                  style: Theme.of(context)
+                      .primaryTextTheme
+                      .labelMedium!
+                      .copyWith(color: Colors.white),
+                ),
+              ),
+            ),
+          ),
+          const Spacer(
+            flex: 14,
+          ),
         ],
       ),
     );
