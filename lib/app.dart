@@ -12,6 +12,10 @@ class MainApp extends StatelessWidget {
         useMaterial3: true,
         primaryColor: Colors.white,
         primaryTextTheme: TextTheme(
+          labelMedium: GoogleFonts.montserrat(
+            textStyle: const TextStyle(
+                color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
+          ),
           headlineMedium: GoogleFonts.montserrat(
               textStyle: const TextStyle(
                   color: Color(0xFF058C42),
@@ -23,11 +27,16 @@ class MainApp extends StatelessWidget {
         useMaterial3: true,
         primaryColor: const Color(0xFF0D2818),
         primaryTextTheme: TextTheme(
+          labelMedium: GoogleFonts.montserrat(
+            textStyle: const TextStyle(
+                color: Color(0xFF0D2818),
+                fontSize: 18,
+                fontWeight: FontWeight.bold),
+          ),
           headlineMedium: GoogleFonts.montserrat(
-              textStyle: const TextStyle(
-                  color: Colors.white,
-                  fontSize: 42,
-                  fontWeight: FontWeight.bold)),
+            textStyle: const TextStyle(
+                color: Colors.white, fontSize: 42, fontWeight: FontWeight.bold),
+          ),
         ),
       ),
       home: const Scaffold(body: LoginPage()),

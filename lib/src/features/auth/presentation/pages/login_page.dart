@@ -20,7 +20,18 @@ class LoginPage extends StatelessWidget {
               child: AppImages.transparentLogoImage),
           Text("Welcome",
               textAlign: TextAlign.center,
-              style: Theme.of(context).primaryTextTheme.headlineMedium)
+              style: Theme.of(context).primaryTextTheme.headlineMedium),
+          SizedBox(
+            height: MediaQuery.of(context).size.height * 0.05,
+            width: MediaQuery.of(context).size.width * 0.75,
+            child: ElevatedButton(
+              onPressed: () => {},
+              child: Text(
+                'LOGIN',
+                style: Theme.of(context).primaryTextTheme.labelMedium,
+              ),
+            ),
+          )
         ],
       ),
     );
