@@ -11,8 +11,10 @@ class LoginPage extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       color: Theme.of(context).primaryColor,
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text("Welcome",
+              textAlign: TextAlign.center,
               style: Theme.of(context).primaryTextTheme.headlineMedium)
         ],
       ),
