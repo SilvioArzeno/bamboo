@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 class AppImages {
-  static final transparentLogoImage =
-      Image.asset(AppImageRoutes.logoTransparent);
+  static final transparentLogoImage = Image.asset(
+    AppImageRoutes.logoTransparent,
+  );
 }
 
 class AppImageRoutes {
