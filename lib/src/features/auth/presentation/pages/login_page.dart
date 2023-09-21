@@ -51,18 +51,12 @@ class LoginPage extends StatelessWidget {
               height: MediaQuery.of(context).size.height * 0.055,
               width: MediaQuery.of(context).size.width * 0.75,
               child: OutlinedButton(
-                style: const ButtonStyle(
-                  side: MaterialStatePropertyAll(
-                    BorderSide(color: Colors.white, width: 2.5),
-                  ),
-                ),
+                style: Theme.of(context).outlinedButtonTheme.style?.copyWith(
+                    textStyle: MaterialStatePropertyAll(
+                        Theme.of(context).primaryTextTheme.labelMedium)),
                 onPressed: () => {},
-                child: Text(
+                child: const Text(
                   'SIGN UP',
-                  style: Theme.of(context)
-                      .primaryTextTheme
-                      .labelMedium!
-                      .copyWith(color: Colors.white),
                 ),
               ),
             ),

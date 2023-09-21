@@ -11,6 +11,20 @@ class MainApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
         primaryColor: Colors.white,
+        elevatedButtonTheme: const ElevatedButtonThemeData(
+            style: ButtonStyle(
+                splashFactory: NoSplash.splashFactory,
+                backgroundColor: MaterialStatePropertyAll(Color(0xFF058C42)))),
+        outlinedButtonTheme: OutlinedButtonThemeData(
+            style: ButtonStyle(
+                splashFactory: NoSplash.splashFactory,
+                textStyle: MaterialStateProperty.all(GoogleFonts.montserrat(
+                    textStyle: const TextStyle(
+                        color: Colors.black,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold))),
+                side: const MaterialStatePropertyAll(
+                    BorderSide(color: Color(0xFF058C42), width: 2.5)))),
         primaryTextTheme: TextTheme(
           labelMedium: GoogleFonts.montserrat(
             textStyle: const TextStyle(
