@@ -35,9 +35,8 @@ class LoginPage extends StatelessWidget {
               width: MediaQuery.of(context).size.width * 0.75,
               child: ElevatedButton(
                 onPressed: () => {},
-                child: Text(
+                child: const Text(
                   'LOGIN',
-                  style: Theme.of(context).primaryTextTheme.labelMedium,
                 ),
               ),
             ),
