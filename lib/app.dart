@@ -33,6 +33,8 @@ class MainApp extends StatelessWidget {
                 side: const MaterialStatePropertyAll(
                     BorderSide(color: Color(0xFF058C42), width: 2.5)))),
         primaryTextTheme: TextTheme(
+          bodyMedium:
+              GoogleFonts.montserrat(textStyle: const TextStyle(fontSize: 14)),
           labelMedium: GoogleFonts.montserrat(
             textStyle: const TextStyle(
                 color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
@@ -47,7 +49,29 @@ class MainApp extends StatelessWidget {
       darkTheme: ThemeData(
         useMaterial3: true,
         primaryColor: const Color(0xFF0D2818),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ButtonStyle(
+            foregroundColor: const MaterialStatePropertyAll(Color(0xFF0D2818)),
+            textStyle: MaterialStatePropertyAll(GoogleFonts.montserrat(
+              textStyle:
+                  const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            )),
+            splashFactory: NoSplash.splashFactory,
+            backgroundColor: const MaterialStatePropertyAll(Colors.white),
+          ),
+        ),
+        outlinedButtonTheme: OutlinedButtonThemeData(
+            style: ButtonStyle(
+                foregroundColor: const MaterialStatePropertyAll(Colors.white),
+                splashFactory: NoSplash.splashFactory,
+                textStyle: MaterialStateProperty.all(GoogleFonts.montserrat(
+                    textStyle: const TextStyle(
+                        fontSize: 18, fontWeight: FontWeight.bold))),
+                side: const MaterialStatePropertyAll(
+                    BorderSide(color: Colors.white, width: 2.5)))),
         primaryTextTheme: TextTheme(
+          bodyMedium:
+              GoogleFonts.montserrat(textStyle: const TextStyle(fontSize: 14)),
           labelMedium: GoogleFonts.montserrat(
             textStyle: const TextStyle(
                 color: Color(0xFF0D2818),

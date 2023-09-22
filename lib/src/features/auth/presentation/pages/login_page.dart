@@ -7,7 +7,7 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 64.0),
+      padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 64.0),
       height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,
       color: Theme.of(context).primaryColor,
@@ -63,6 +63,19 @@ class LoginPage extends StatelessWidget {
           const Spacer(
             flex: 14,
           ),
+          Row(children: <Widget>[
+            const Expanded(
+                child: Divider(
+              endIndent: 20,
+            )),
+            Text("OR LOGIN WITH",
+                style: Theme.of(context).primaryTextTheme.bodyMedium),
+            const Expanded(
+              child: Divider(
+                indent: 20,
+              ),
+            ),
+          ]),
         ],
       ),
     );
