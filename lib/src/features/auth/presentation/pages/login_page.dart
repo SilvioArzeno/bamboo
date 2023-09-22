@@ -61,7 +61,7 @@ class LoginPage extends StatelessWidget {
             ),
           ),
           const Spacer(
-            flex: 14,
+            flex: 4,
           ),
           Row(children: <Widget>[
             const Expanded(
@@ -76,6 +76,36 @@ class LoginPage extends StatelessWidget {
               ),
             ),
           ]),
+          const Spacer(
+            flex: 2,
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 48.0),
+            child: Row(
+              children: [
+                CircleAvatar(
+                  radius: 32,
+                  backgroundColor: Colors.white,
+                  backgroundImage: AppImages.transparentLogoImage.image,
+                ),
+                const Spacer(),
+                CircleAvatar(
+                  radius: 32,
+                  backgroundColor: Colors.white,
+                  backgroundImage: AppImages.transparentLogoImage.image,
+                ),
+                const Spacer(),
+                CircleAvatar(
+                  radius: 32,
+                  backgroundColor: Colors.white,
+                  backgroundImage: AppImages.transparentLogoImage.image,
+                )
+              ],
+            ),
+          ),
+          const Spacer(
+            flex: 6,
+          )
         ],
       ),
     );
