@@ -83,23 +83,32 @@ class LoginPage extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 48.0),
             child: Row(
               children: [
-                CircleAvatar(
-                  radius: 32,
-                  backgroundColor: Colors.white,
-                  backgroundImage: AppImages.transparentLogoImage.image,
+                GestureDetector(
+                  onTap: () => {print('Facebook SIGN IN')},
+                  child: CircleAvatar(
+                    radius: 32,
+                    backgroundColor: Colors.white,
+                    backgroundImage: AppImages.transparentLogoImage.image,
+                  ),
                 ),
                 const Spacer(),
-                CircleAvatar(
-                  radius: 32,
-                  backgroundColor: Colors.white,
-                  backgroundImage: AppImages.transparentLogoImage.image,
+                GestureDetector(
+                  onTap: () => {print('GOOGLE SIGN IN')},
+                  child: CircleAvatar(
+                    radius: 32,
+                    backgroundColor: Colors.white,
+                    backgroundImage: AppImages.transparentLogoImage.image,
+                  ),
                 ),
                 const Spacer(),
-                CircleAvatar(
-                  radius: 32,
-                  backgroundColor: Colors.white,
-                  backgroundImage: AppImages.transparentLogoImage.image,
-                )
+                GestureDetector(
+                  onTap: () => {print('Apple SIGN IN')},
+                  child: CircleAvatar(
+                    radius: 32,
+                    backgroundColor: Colors.white,
+                    backgroundImage: AppImages.transparentLogoImage.image,
+                  ),
+                ),
               ],
             ),
           ),
